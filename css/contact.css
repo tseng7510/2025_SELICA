@@ -1,0 +1,371 @@
+.contactPage .siteMain {
+  background: none;
+  padding-bottom: 0;
+}
+.contactPage .mainBox {
+  padding: 0;
+}
+.contactPage section {
+  padding: 0 !important;
+}
+.contactPage section .topContent {
+  position: relative;
+  z-index: 9;
+}
+.contactPage section .topContent .box {
+  border: 10px solid #fff;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 1000px) {
+  .contactPage section .topContent .box {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 550px) {
+  .contactPage section .topContent .box {
+    margin-bottom: 30px;
+  }
+}
+.contactPage section .topContent .pic {
+  width: 48%;
+}
+@media screen and (max-width: 1000px) {
+  .contactPage section .topContent .pic {
+    width: 100%;
+  }
+}
+.contactPage section .topContent .title {
+  flex-grow: 1;
+  font-size: var(--clamp48);
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.2;
+  padding: 20px;
+  position: relative;
+  isolation: isolate;
+  background: #6f9ab6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1000px) {
+  .contactPage section .topContent .title br {
+    display: none;
+  }
+}
+.contactPage section .topContent .title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(to bottom, #6f9ab6 0px, #6f9ab6 3px, transparent 3px, transparent 4px, #6f9ab6 4px, #6f9ab6 6px, transparent 6px, transparent 7px, #6f9ab6 7px, #6f9ab6 8px);
+  z-index: -1;
+}
+.contactPage section .topContent .info {
+  background: #eeeeee;
+  padding: 5%;
+  font-size: 1.3125rem;
+}
+@media screen and (max-width: 1000px) {
+  .contactPage section .topContent .info {
+    font-size: 1.125rem;
+  }
+}
+.contactPage section .topContent ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contactPage section .topContent ul li {
+  display: flex;
+  position: relative;
+  padding-left: 35px;
+  color: #545454;
+  font-size: var(--clamp21);
+}
+@media screen and (max-width: 550px) {
+  .contactPage section .topContent ul li {
+    flex-direction: column;
+  }
+}
+.contactPage section .topContent ul li a {
+  color: #545454;
+  font-size: var(--clamp21);
+  transition: all 0.3s ease;
+}
+.contactPage section .topContent ul li a:hover {
+  color: #6f9ab6;
+}
+.contactPage section .topContent ul li span {
+  display: block;
+  width: 85px;
+  font-weight: 700;
+  flex-shrink: 0;
+  color: #6f9ab6;
+  line-height: 1.4;
+}
+.contactPage section .topContent ul li::before {
+  content: '';
+  width: 23px;
+  height: 23px;
+  background: url('../images/icon/icon_contact.png') top no-repeat;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 3px;
+}
+.contactPage section .topContent ul li.address::before {
+  background-position: 0 0;
+}
+.contactPage section .topContent ul li.tel::before {
+  background-position: 0 -23px;
+}
+.contactPage section .topContent ul li.fax::before {
+  background-position: 0 -46px;
+}
+.contactPage section .topContent ul li.mail::before {
+  background-position: 0 -69px;
+}
+.contactPage section .listBox {
+  margin-bottom: clamp(30px, 5%, 70px);
+}
+.contactPage section .listBox .item {
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
+  border: #6f9ab6 1px solid;
+}
+@media screen and (max-width: 767px) {
+  .contactPage section .listBox .item {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+.contactPage section .listBox .item a {
+  flex-grow: 1;
+  display: flex;
+  gap: 20px;
+}
+@media screen and (max-width: 767px) {
+  .contactPage section .listBox .item a {
+    flex-direction: column;
+  }
+}
+.contactPage section .listBox .item .titleF {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: #6f9ab6;
+  color: #fff;
+  font-weight: 600;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 1.125rem;
+}
+@media screen and (max-width: 767px) {
+  .contactPage section .listBox .item .titleF {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+  }
+}
+.contactPage section .listBox .item .picBox {
+  padding: 10px;
+  height: 185px;
+  width: 195px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1000px) {
+  .contactPage section .listBox .item .picBox {
+    margin: 0 auto;
+  }
+}
+.contactPage section .listBox .item .infoBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+@media screen and (max-width: 767px) {
+  .contactPage section .listBox .item .infoBox {
+    padding: 0;
+    text-align: center;
+  }
+}
+.contactPage section .listBox .item .subTitle {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+.contactPage section .listBox .item .title {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: #6f9ab6;
+}
+@media screen and (max-width: 1000px) {
+  .contactPage section .listBox .item .title {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contactPage section .listBox .item .title {
+    font-size: 1.25rem;
+  }
+}
+.contactPage section .listBox .item .title span {
+  color: #6f9ab6;
+}
+.contactPage section .listBox .item .del {
+  width: 40px;
+  aspect-ratio: 1;
+  align-self: center;
+  position: relative;
+  margin: 0 30px 0 auto;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  background: #6f9ab6;
+  border-radius: 50%;
+}
+@media screen and (max-width: 767px) {
+  .contactPage section .listBox .item .del {
+    margin: 10px auto 30px;
+  }
+}
+.contactPage section .listBox .item .del::before,
+.contactPage section .listBox .item .del::after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 20px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #fff;
+  top: 50%;
+  left: 50%;
+  transition: all 0.3s ease;
+}
+.contactPage section .listBox .item .del::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.contactPage section .listBox .item .del:hover {
+  background: #000;
+}
+.contactPage section .inquiry {
+  padding-top: 70px;
+}
+@media screen and (max-width: 1000px) {
+  .contactPage section .inquiry {
+    padding-top: 50px;
+  }
+}
+.contactPage section .bottomBox {
+  margin: 0 auto 5%;
+  background: #fff;
+}
+.contactPage section .bottomBox .infoBox {
+  border-bottom: #bbbbbb 1px solid;
+  margin: 0 auto var(--contentPadding);
+}
+.contactPage section .bottomBox .infoBox .title {
+  font-size: var(--clamp48);
+  font-weight: 800;
+  line-height: 1.2;
+  padding-bottom: 3px;
+  position: relative;
+  isolation: isolate;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contactPage section .bottomBox .infoBox .notice {
+  font-size: var(--clamp18);
+  max-width: 900px;
+  margin: 0 auto 4%;
+  text-align: center;
+}
+.contactPage section .bottomBox .formBox {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.contactPage section .map {
+  height: 500px;
+}
+@media screen and (max-width: 1000px) {
+  .contactPage section .map {
+    height: 300px;
+  }
+}
+.contactPage section .map iframe {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+.contactPage .pageBtnBox .send {
+  padding: 20px 30px 18px;
+}
+
+.contactOk section {
+  text-align: center;
+}
+.contactOk section .title {
+  max-width: 570px;
+  margin: 0 auto;
+  line-height: 1.2;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+@media screen and (max-width: 1000px) {
+  .contactOk section .title {
+    font-size: 2.25rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contactOk section .title {
+    font-size: 1.5rem;
+  }
+}
+.contactOk section .unitTitleBox .title::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 60px;
+  height: 5px;
+  transform: translateX(-50%);
+  display: block;
+  background: #000;
+}
+.contactOk section .txt {
+  color: #333333;
+  font-size: 1.125rem;
+}
+@media screen and (max-width: 1000px) {
+  .contactOk section .txt {
+    font-size: 1rem;
+  }
+}
+.contactOk section .subTitle {
+  color: #6f9ab6;
+  font-weight: 700;
+  font-size: 1.75rem;
+  margin-bottom: clamp(20px, 5%, 50px);
+}
+@media screen and (max-width: 1000px) {
+  .contactOk section .subTitle {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contactOk section .subTitle {
+    font-size: 1.25rem;
+  }
+} /*# sourceMappingURL=contact.css.map */

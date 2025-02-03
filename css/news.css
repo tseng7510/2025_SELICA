@@ -1,0 +1,518 @@
+.newsList .contentBox {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.newsList .listBox {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 1000px) {
+  .newsList .listBox {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .newsList .listBox .item {
+    width: calc((100% - 40px * (2 - 1)) / 2);
+  }
+}
+@media screen and (max-width: 575px) {
+  .newsList .listBox .item {
+    width: calc((100% - 40px * (1 - 1)) / 1);
+  }
+}
+.newsList .listBox .item a {
+  display: flex;
+  gap: 30px;
+}
+@media screen and (max-width: 1000px) {
+  .newsList .listBox .item a {
+    flex-direction: column;
+  }
+}
+.newsList .listBox .item a:hover .pic img {
+  transform: scale(1.5);
+}
+.newsList .listBox .item a:hover .more::before {
+  width: 100%;
+  left: 0;
+}
+.newsList .listBox .pic {
+  width: 30%;
+  overflow: hidden;
+}
+@media screen and (max-width: 1000px) {
+  .newsList .listBox .pic {
+    width: 100%;
+  }
+}
+.newsList .listBox .pic img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  transition: all 15s ease;
+}
+.newsList .listBox .infoBox {
+  width: calc(70% - 30px);
+  display: flex;
+  gap: 30px;
+  padding-bottom: 30px;
+  border-bottom: #cccccc 1px solid;
+}
+@media screen and (max-width: 1000px) {
+  .newsList .listBox .infoBox {
+    width: 100%;
+    gap: 20px;
+    flex-direction: column;
+  }
+}
+.newsList .listBox .info {
+  width: calc(50% - 15px);
+}
+@media screen and (max-width: 1000px) {
+  .newsList .listBox .info {
+    width: 100%;
+  }
+}
+.newsList .listBox .title {
+  font-size: var(--clamp21);
+  line-height: 1.2;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 1000px) {
+  .newsList .listBox .title {
+    height: 64px;
+  }
+}
+.newsList .listBox time {
+  font-weight: 500;
+  color: #6f9ab6;
+}
+.newsList .listBox .description {
+  width: calc(50% - 15px);
+  color: #666666;
+  font-size: var(--clamp18);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+@media screen and (max-width: 1000px) {
+  .newsList .listBox .description {
+    width: 100%;
+  }
+}
+.newsList .listBox i {
+  display: block;
+  position: relative;
+  background: #6f9ab6;
+  width: 47px;
+  height: 47px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-top: 0;
+  transition: all 0.3s ease;
+}
+.newsList .listBox i::after {
+  content: '';
+  width: 13px;
+  height: 13px;
+  display: block;
+  background: url('../images/icon/icon_arrow.svg') center no-repeat;
+  transform: rotate(180deg);
+  filter: invert(1);
+}
+
+.newsDetail .topBox {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--clamp60);
+}
+@media screen and (max-width: 767px) {
+  .newsDetail .topBox {
+    flex-direction: column;
+  }
+}
+.newsDetail .topBox .pic {
+  width: 50%;
+}
+@media screen and (max-width: 767px) {
+  .newsDetail .topBox .pic {
+    width: 100%;
+    order: 2;
+  }
+}
+.newsDetail .topBox .info {
+  padding: 0 0 60px 60px;
+  width: 50%;
+  border-bottom: #cccccc 1px solid;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  .newsDetail .topBox .info {
+    width: 100%;
+    padding: 0 0 20px 0px;
+  }
+}
+.newsDetail .topBox .info::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5.5px 12px 5.5px 0;
+  border-color: transparent #e50012 transparent transparent;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+  right: 0;
+}
+.newsDetail .title {
+  font-size: var(--clamp36);
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+.newsDetail time {
+  font-weight: 500;
+  color: #6f9ab6;
+}
+.newsDetail .editor,
+.newsDetail .description {
+  margin: 0;
+  color: #666666;
+  font-size: var(--clamp21);
+}
+
+/* .brochuresList section .container {
+  max-width: 1990px;
+  margin: 0 0 0 auto;
+  padding-right: 0;
+} */
+@media screen and (max-width: 1920px) {
+  .brochuresList section .container {
+    max-width: 1670px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .brochuresList section .container {
+    padding-right: var(--contentPadding);
+  }
+}
+.brochuresList .contentBox {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media screen and (max-width: 767px) {
+  .brochuresList .contentBox {
+    gap: 80px;
+  }
+}
+
+.brochuresList .contentBox .infoBox {
+  /* width: 310px; */
+  /* width: calc(100% - 310px - 50px); */
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media screen and (max-width: 767px) {
+  .brochuresList .contentBox .infoBox {
+    width: 100%;
+  }
+}
+.brochuresList .contentBox .infoBox .title {
+  font-size: var(--clamp28);
+  color: #1f1813;
+  font-weight: 600;
+}
+.brochuresList .contentBox .infoBox .editor,
+.brochuresList .contentBox .infoBox .description {
+  margin: 0;
+  color: #666666;
+  font-size: var(--clamp18);
+  line-height: 1.6;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+/* .brochuresList .contentBox .infoBox .controlBox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 9;
+} */
+.brochuresList .contentBox .infoBox .swiperArrow {
+  position: relative;
+  right: auto;
+  left: auto;
+  top: auto;
+  width: 47px;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-top: 0;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 767px) {
+  .brochuresList .contentBox .swiperArrow {
+    top: -30px;
+  }
+}
+.brochuresList .contentBox .swiperArrow::after {
+  content: '';
+  width: 40px;
+  height: 40px;
+  display: block;
+  mask: url('../images/icon/icon_ar.svg') center no-repeat;
+  background: #6f9ab6;
+}
+.brochuresList .contentBox .swiperArrow.swiper-button-prev {
+  left: -30px;
+}
+@media screen and (max-width: 767px) {
+  .brochuresList .contentBox .swiperArrow.swiper-button-prev {
+    left: 50%;
+    transform: translateX(-150%);
+  }
+}
+
+.brochuresList .contentBox .swiperArrow.swiper-button-next {
+  right: -30px;
+}
+@media screen and (max-width: 767px) {
+  .brochuresList .contentBox .swiperArrow.swiper-button-next {
+    right: auto;
+    left: 50%;
+    transform: translateX(50%);
+  }
+}
+.brochuresList .contentBox .swiperArrow.swiper-button-next::after {
+  transform: rotate(180deg);
+}
+.brochuresList .contentBox .swiperArrow:hover {
+}
+.brochuresList .contentBox .listBox {
+  /* width: calc(100% - 310px - 50px); */
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  .brochuresList .contentBox .listBox {
+    width: 100%;
+  }
+}
+.brochuresList .contentBox .listBox a {
+  display: block;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  background: #fff;
+}
+.brochuresList .contentBox .listBox a:hover {
+  background: #6f9ab6;
+}
+.brochuresList .contentBox .listBox a:hover .title {
+  color: #fff;
+}
+.brochuresList .contentBox .listBox .pic {
+  margin-bottom: 20px;
+}
+.brochuresList .contentBox .listBox .title {
+  font-size: var(--clamp21);
+  line-height: 1.4;
+  font-weight: 600;
+  color: #1f1813;
+  padding-right: 60px;
+  isolation: isolate;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.brochuresList .contentBox .listBox .title::before,
+.brochuresList .contentBox .listBox .title::after {
+  content: '';
+  display: block;
+  width: 47px;
+  height: 47px;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  -webkit-mask: url('../images/icon/icon_download.svg') center no-repeat;
+  mask: url('../images/icon/icon_download.svg') center no-repeat;
+  background: #fff;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+@media screen and (max-width: 1000px) {
+  .brochuresList .contentBox .listBox .title::before,
+  .brochuresList .contentBox .listBox .title::after {
+    width: 40px;
+    height: 40px;
+  }
+}
+.brochuresList .contentBox .listBox .title::before {
+  -webkit-mask: none;
+  mask: none;
+  background: #6f9ab6;
+  z-index: -1;
+}
+
+.videoList .topBox {
+  margin-bottom: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+@media screen and (max-width: 767px) {
+  .videoList .topBox {
+    gap: 30px;
+    flex-direction: column;
+  }
+}
+.videoList .topBox .title {
+  width: 35%;
+  color: #1f1813;
+  font-weight: 800;
+  line-height: 1.4;
+  font-size: var(--clamp32);
+}
+@media screen and (max-width: 767px) {
+  .videoList .topBox .title {
+    width: 100%;
+  }
+}
+.videoList .topBox .video {
+  width: calc(65% - 50px);
+}
+@media screen and (max-width: 767px) {
+  .videoList .topBox .video {
+    width: 100%;
+  }
+}
+.videoList .listBox {
+  position: relative;
+  max-width: 1315px;
+  box-sizing: content-box;
+  padding: 0 80px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+  .videoList .listBox {
+    padding: 0 30px;
+  }
+}
+.videoList .listBox:hover .picBox {
+  opacity: 0.5;
+}
+.videoList .listBox .item {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  transition: all 0.3s ease;
+}
+.videoList .listBox .item:hover .picBox {
+  opacity: 1;
+}
+.videoList .listBox .item:hover .picBox::after {
+  width: 100%;
+}
+.videoList .listBox .item .picBox {
+  padding-bottom: 25px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.videoList .listBox .item .picBox::before {
+  content: '';
+  height: 1px;
+  left: 0;
+  right: -16px;
+  bottom: 0;
+  background: #cccccc;
+  display: block;
+  position: absolute;
+}
+.videoList .listBox .item .picBox::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -1px;
+  background: #6f9ab6;
+  display: block;
+  transition: all 0.3s ease;
+  position: absolute;
+}
+.videoList .listBox .item .picBox .pic {
+  margin: 0 auto;
+}
+.videoList .listBox .item .title {
+  color: #000;
+  font-size: var(--clamp21);
+  line-height: 1;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-align: center;
+  position: relative;
+}
+.videoList .swiperArrow {
+  position: absolute;
+  background: #6f9ab6;
+  width: 47px;
+  height: 47px;
+  top: 50%;
+  right: auto;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-top: 0;
+  transform: translateY(-120%);
+  transition: all 0.3s ease;
+}
+.videoList .swiperArrow::after {
+  content: '';
+  width: 13px;
+  height: 13px;
+  display: block;
+  background: url('../images/icon/icon_arrow.svg') center no-repeat;
+  filter: invert(1);
+}
+.videoList .swiperArrow.swiper-button-next {
+  left: auto;
+  right: 10px;
+}
+.videoList .swiperArrow.swiper-button-next::after {
+  transform: rotate(180deg);
+}
+.videoList .swiperArrow:hover {
+  background: #000;
+}
+.videoList .pageBtnBox {
+  border: none;
+} /*# sourceMappingURL=news.css.map */
