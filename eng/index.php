@@ -47,13 +47,13 @@
                         <div class="tag">CNC Lathe</div>
                         <h2 class="title">SH-700/900</h2>
                         <p class="description">Application: swiss type lathe, swiss type lathes, cnc swiss lathe, swiss turning machines, medical implant.</p>
+                        <a class="indexMore" href="products_list.php">READ MORE</a>
                       </div>
                     </div>
                   </div>
                 <? } ?>
               </div>
               <div class="controlBox">
-                <a class="indexMore" href="products_list.php">READ MORE</a>
                 <div class="swiperUse">
                   <div class="swiperArrow swiper-button-prev"></div>
                   <div class="swiperArrow swiper-button-next"></div>

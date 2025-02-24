@@ -47,6 +47,7 @@
   width: 100%;
   height: 100%;
   top: -80px;
+  pointer-events: none;
 }
 .banner .swiper-wrapper .videoContainer iframe {
   width: 100%;
@@ -231,9 +232,24 @@ section .blockTitle {
 .productBox .item .pic img {
   aspect-ratio: 6/4;
 }
+.productBox .item .info {
+  position: relative;
+  padding-bottom: 60px;
+}
 @media screen and (min-width: 768px) {
   .productBox .item .info {
     width: calc(48% - 60px);
+  }
+}
+.productBox .item .info .indexMore {
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  z-index: 9;
+}
+@media screen and (max-width: 900px) and (min-width: 768px) {
+  .productBox .item .info .indexMore {
+    width: 130px;
   }
 }
 .productBox .item .info .tag {
@@ -262,24 +278,15 @@ section .blockTitle {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
-@media screen and (min-width: 768px) {
-  .productBox .item .info .description {
-    margin-bottom: 60px;
-  }
-}
 .productBox .controlBox {
-  position: relative;
+  position: absolute;
+  right: 0;
+  bottom: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   gap: 20px;
   z-index: 9;
-}
-@media screen and (min-width: 768px) {
-  .productBox .controlBox {
-    margin: -50px 0 0 auto;
-    width: calc(48% - 60px);
-  }
 }
 .productBox .controlBox .swiperUse {
   display: flex;
