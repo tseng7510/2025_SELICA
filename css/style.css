@@ -2167,10 +2167,11 @@ button:focus {
   }
 }
 .footerBox .footerMenu .menu ul {
+  max-width: 250px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  max-height: 180px;
+  /* max-height: 180px; */
   gap: 0 40px;
 }
 .footerBox .footerMenu .menu .title {
