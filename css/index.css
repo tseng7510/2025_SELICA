@@ -253,13 +253,13 @@ section .blockTitle {
   }
 }
 .productBox .item .info .tag {
-  font-size: var(--clamp48);
+  font-size: var(--clamp36);
   color: #211814;
   font-weight: 600;
   line-height: 1;
 }
 .productBox .item .info .title {
-  font-size: var(--clamp90);
+  font-size: var(--clamp64);
   color: #6f9ab6;
   font-weight: 800;
   line-height: 1.2;
