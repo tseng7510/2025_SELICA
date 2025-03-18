@@ -126,8 +126,12 @@
         el: '.banner .swiper-pagination',
         clickable: true,
       },
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: true,
+      },
       autoplay: {
-        delay: 3000,
+        delay: 5000,
         stopOnLastSlide: false,
         disableOnInteraction: true,
       },
